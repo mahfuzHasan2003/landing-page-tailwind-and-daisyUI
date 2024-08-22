@@ -30,6 +30,13 @@
           extend: {
             colors: {
               clifford: "#da373d",
+              primary_dark: "#F4F4F4",
+              primary_light: "#ABEF5F",
+              btn_hover: "#86e817",
+              primary_light_20: "#ABEF5F2a",
+              primary_light_20_hover: "#ABEF5F6a",
+              primary_light_50: "#ABEF5F5a",
+              primary_light_50_hover: "#ABEF5F9a",
             },
             fontFamily: {
               manrope: ["Manrope"],
@@ -38,8 +45,137 @@
         },
       };
     </script>
+
+    <!-- Font Awesome CDN -->
+    <script
+      src="https://kit.fontawesome.com/b7eaa77b2e.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <!-- Body Starts Here -->
-  <body class="font-manrope"></body>
+  <body class="font-manrope bg-primary_dark">
+    <!-- Header Part -->
+    <header class="bg-gradient-to-b from-[#ffffff00] to-[#FFFFFF]">
+      <!-- Nav Starts Here -->
+      <nav class="container mx-auto">
+        <div class="navbar justify-between">
+          <!-- Nav start part -->
+          <div class="navbar-start">
+            <a class="btn btn-ghost font-black">
+              <span class="p-2 rounded-full bg-primary_light">
+                <i class="fa-solid fa-arrow-right -rotate-45"></i>
+              </span>
+              <span class="font-black text-xl">Rinterio</span>
+            </a>
+          </div>
+          <!-- Nav Center part -->
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a class="hover:font-bold">Home</a></li>
+              <li><a class="hover:font-bold">Services</a></li>
+              <li><a class="hover:font-bold">Portfolio</a></li>
+              <li><a class="hover:font-bold">Blogs</a></li>
+              <li><a class="hover:font-bold">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <!-- Nav End part -->
+          <div class="navbar-end hidden md:inline-flex">
+            <div class="menu menu-horizontal gap-2">
+              <a
+                href="#"
+                class="btn btn-ghost text-xl w-12 h-12 bg-white rounded-full border-gray-200"
+                ><i class="fa-solid fa-magnifying-glass"></i
+              ></a>
+              <a
+                href="#"
+                class="btn btn-ghost text-xl w-12 h-12 bg-white rounded-full border-gray-200"
+                ><i class="fa-solid fa-cart-shopping"></i
+              ></a>
+              <a
+                class="btn font-bold bg-primary_light hover:bg-btn_hover border-none shadow-none"
+              >
+                Book Consult
+                <span class="bg-black text-white p-2 rounded-full"
+                  ><i class="fa-solid fa-arrow-right -rotate-45"></i
+                ></span>
+              </a>
+            </div>
+          </div>
+
+          <!-- for Mobile Devices -->
+          <div class="dropdown">
+            <div
+              tabindex="0"
+              role="button"
+              class="btn lg:hidden shadow-none border-gray-200 bg-white rounded-full w-12 h-12"
+            >
+              <i class="fa-solid fa-bars fa-xl"></i>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-2 gap-1"
+            >
+              <div class="flex mx-auto">
+                <a
+                  href="#"
+                  class="btn btn-ghost text-xl p-3 rounded-full bg-white"
+                  ><i class="fa-solid fa-magnifying-glass"></i
+                ></a>
+                <a
+                  href="#"
+                  class="btn btn-ghost text-xl bg-white rounded-full p-3"
+                  ><i class="fa-solid fa-cart-shopping"></i
+                ></a>
+              </div>
+              <a
+                class="btn font-bold bg-primary_light hover:bg-btn_hover border-none shadow-none"
+              >
+                Book Consult
+                <span class="bg-black text-white p-2 rounded-full"
+                  ><i class="fa-solid fa-arrow-right -rotate-45"></i
+                ></span>
+              </a>
+              <li><a class="hover:font-bold">Home</a></li>
+              <li><a class="hover:font-bold">Services</a></li>
+              <li><a class="hover:font-bold">Portfolio</a></li>
+              <li><a class="hover:font-bold">Blogs</a></li>
+              <li><a class="hover:font-bold">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Nav ends here -->
+      </nav>
+
+      <!-- Header part -->
+      <section class="container mx-auto p-10">
+        <div class="md:w-5/6 mx-auto text-center space-y-5">
+          <img src="./assets/banner.png" alt="" class="mx-auto" />
+          <h1 class="text-2xl md:text-3xl lg:text-6xl font-black leading-snug">
+            A barn house of this design has a striking appearance
+          </h1>
+          <p class="w-3/4 mx-auto">
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents, and
+            large windows that flood the space with natural light.
+          </p>
+          <a
+            class="btn font-bold bg-primary_light_50 hover:bg-primary_light_50_hover border-primary_light shadow-none"
+          >
+            View Details
+            <span class="bg-primary_light text-black p-2 rounded-full"
+              ><i class="fa-solid fa-arrow-right -rotate-45"></i
+            ></span>
+          </a>
+        </div>
+      </section>
+    </header>
+
+    <!-- Main Part -->
+    <main></main>
+
+    <!-- Footer Part -->
+    <footer></footer>
+  </body>
 </html>
