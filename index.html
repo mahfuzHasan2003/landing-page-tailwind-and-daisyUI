@@ -53,9 +53,6 @@
       };
     </script>
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css" />
-
     <!-- Font Awesome CDN -->
     <script
       src="https://kit.fontawesome.com/b7eaa77b2e.js"
@@ -67,108 +64,133 @@
   <body class="font-manrope bg-primary_dark">
     <!-- ---------------- -->
     <!-- Header Part -->
-    <header class="bg-gradient-to-b from-[#ffffff00] to-[#FFFFFF]">
+    <header class="bg-gradient-to-b from-[#ffffff00] to-[#FFFFFF] px-6 py-2">
       <!-- ---------------- -->
       <!-- Nav Starts Here -->
       <nav class="container mx-auto">
         <div class="navbar justify-between">
-          <!-- navbar-start -->
-          <div class="navbar-start">
-            <a class="btn btn-ghost font-black">
+          <!-- nav start -->
+          <div class="navbar-start w-max">
+            <a href="#" class="text-2xl font-black flex gap-2 items-center">
               <span
-                class="h-7 w-7 grid place-items-center rounded-full bg-primary_light font-black"
-              >
-                <i class="fa-solid fa-arrow-right -rotate-45"></i>
-              </span>
-              <span class="text-2xl">Rinterio</span>
+                class="bg-primary_light grid place-items-center h-7 w-7 rounded-full"
+                ><i class="fa-solid fa-arrow-right fa-xs -rotate-45"></i
+              ></span>
+              Rinterio
             </a>
           </div>
-          <!-- navbar-center -->
+          <!-- nav center -->
           <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1">
-              <li><a class="hover:font-bold">Home</a></li>
-              <li><a class="hover:font-bold">Services</a></li>
-              <li><a class="hover:font-bold">Portfolio</a></li>
-              <li><a class="hover:font-bold">Team Member</a></li>
-              <li><a class="hover:font-bold">Blogs</a></li>
-              <li><a class="hover:font-bold">Contact Us</a></li>
+            <ul class="flex gap-5 *:font-semibold">
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">Services</a>
+              </li>
+              <li>
+                <a href="#">Portfolio</a>
+              </li>
+              <li>
+                <a href="#">Team Members</a>
+              </li>
+              <li>
+                <a href="#">Blogs</a>
+              </li>
+              <li>
+                <a href="#">Contact Us</a>
+              </li>
             </ul>
           </div>
-
-          <!-- navbar-end -->
-          <div class="navbar-end hidden md:inline-flex">
-            <div class="menu menu-horizontal gap-2">
-              <a
-                href="#"
-                class="btn btn-ghost text-xl w-12 h-12 bg-white rounded-full border-gray-200"
-                ><i class="fa-solid fa-magnifying-glass"></i
-              ></a>
-              <a
-                href="#"
-                class="btn btn-ghost text-xl w-12 h-12 bg-white rounded-full border-gray-200"
-                ><i class="fa-solid fa-cart-shopping"></i
-              ></a>
-
+          <!-- nav end -->
+          <div class="navbar-end gap-1 w-max">
+            <!-- Search & Cart -->
+            <div class="hidden md:flex gap-1">
               <button
-                class="btn font-bold bg-primary_light hover:bg-btn_hover border-none shadow-none"
+                class="btn btn-ghost btn-circle text-xl bg-white border-slate-300 hover:bg-white hover:border-slate-300"
               >
-                Book Consult
-                <span
-                  class="bg-black text-white h-7 w-7 rounded-full grid place-items-center"
-                  ><i class="fa-solid fa-arrow-right -rotate-45"></i
-                ></span>
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+              <button
+                class="btn btn-ghost btn-circle text-xl bg-white border-slate-300 hover:bg-white hover:border-slate-300"
+              >
+                <i class="fa-solid fa-cart-shopping"></i>
               </button>
             </div>
-          </div>
-
-          <!-- for Mobile Devices -->
-          <div class="dropdown">
-            <div
-              tabindex="0"
-              role="button"
-              class="btn lg:hidden shadow-none border-gray-200 bg-white rounded-full w-12 h-12"
+            <!-- Booking -->
+            <button
+              class="hidden md:flex gap-1 items-center bg-primary_light hover:bg-btn_hover py-3 px-5 rounded-full font-bold"
             >
-              <i class="fa-solid fa-bars fa-lg"></i>
-            </div>
-            <ul
-              tabindex="0"
-              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-2 gap-1"
-            >
-              <div class="flex mx-auto">
-                <a
-                  href="#"
-                  class="btn btn-ghost text-xl p-3 rounded-full bg-white"
-                  ><i class="fa-solid fa-magnifying-glass"></i
-                ></a>
-                <a
-                  href="#"
-                  class="btn btn-ghost text-xl bg-white rounded-full p-3"
-                  ><i class="fa-solid fa-cart-shopping"></i
-                ></a>
+              Book Consult
+              <span
+                class="bg-black text-white grid place-items-center h-7 w-7 rounded-full"
+                ><i class="fa-solid fa-arrow-right fa-xs -rotate-45"></i>
+              </span>
+            </button>
+            <!-- For Mobile Devices -->
+            <div class="dropdown lg:hidden">
+              <div
+                tabindex="0"
+                role="button"
+                class="btn btn-ghost btn-circle text-xl bg-white border-slate-300 hover:bg-white hover:border-slate-300"
+              >
+                <i class="fa-solid fa-bars"></i>
               </div>
-              <button
-                class="btn font-bold bg-primary_light hover:bg-btn_hover border-none shadow-none"
+              <ul
+                tabindex="0"
+                class="dropdown-content bg-base-100 rounded-md z-[1] mt-3 w-max min-w-52 p-5 shadow right-0 font-semibold space-y-2"
               >
-                Book Consult
-                <span
-                  class="bg-black text-white h-7 w-7 rounded-full grid place-items-center"
-                  ><i class="fa-solid fa-arrow-right -rotate-45"></i
-                ></span>
-              </button>
-              <li><a class="hover:font-bold">Home</a></li>
-              <li><a class="hover:font-bold">Services</a></li>
-              <li><a class="hover:font-bold">Portfolio</a></li>
-              <li><a class="hover:font-bold">Team Member</a></li>
-              <li><a class="hover:font-bold">Blogs</a></li>
-              <li><a class="hover:font-bold">Contact Us</a></li>
-            </ul>
+                <!-- Search & Cart -->
+                <li class="flex md:hidden gap-2 justify-center">
+                  <button
+                    class="btn btn-ghost btn-circle text-xl bg-white border-slate-300 hover:bg-white hover:border-slate-300"
+                  >
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                  <button
+                    class="btn btn-ghost btn-circle text-xl bg-white border-slate-300 hover:bg-white hover:border-slate-300"
+                  >
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </button>
+                </li>
+                <!-- Booking -->
+                <li
+                  class="flex md:hidden gap-1 items-center bg-primary_light hover:bg-btn_hover py-3 px-5 rounded-md"
+                >
+                  <span class="font-semibold">Book Consult</span>
+                  <span
+                    class="bg-black text-white grid place-items-center h-7 w-7 rounded-full"
+                    ><i class="fa-solid fa-arrow-right fa-xs -rotate-45"></i>
+                  </span>
+                </li>
+                <!-- Other links -->
+                <li>
+                  <a href="#">Home</a>
+                </li>
+                <li>
+                  <a href="#">Services</a>
+                </li>
+                <li>
+                  <a href="#">Portfolio</a>
+                </li>
+                <li>
+                  <a href="#">Team Members</a>
+                </li>
+                <li>
+                  <a href="#">Blogs</a>
+                </li>
+                <li>
+                  <a href="#">Contact Us</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>
 
       <!-- ---------------- -->
       <!-- Header part -->
-      <section class="container mx-auto p-6">
+      <section class="container mx-auto py-8 md:py-14 lg:py-20">
         <div class="md:w-5/6 mx-auto text-center space-y-5">
           <img src="./assets/banner.png" alt="" class="mx-auto" />
           <div class="max-w-[1000px] mx-auto space-y-5">
